@@ -14,8 +14,8 @@ bool motionDetected = false;
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char *ssid = "InterWebs";
-const char *password = "Huz5210e";
+const char *ssid = "*******";
+const char *password = "********";
 
 void startCameraServer();
 void setupLedFlash();
@@ -33,7 +33,7 @@ void captureAndSend() {
   WiFiClient client;
   HTTPClient http;
 
-  http.begin(client, "http://192.168.122.140:5000/upload"); 
+  http.begin(client, "http://*********:5000/upload"); 
   http.addHeader("Content-Type", "image/jpeg");
 
   int response = http.POST(fb->buf, fb->len);
