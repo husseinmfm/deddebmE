@@ -11,10 +11,10 @@ app = Flask(__name__)
 # =========================
 # TELEGRAM CONFIG
 # =========================
-BOT_TOKEN = "8631637642:AAFA1Mit3cShikO5NM0Fmm8qxBBVva8GDP8"
-CHAT_ID = "1339280432"
+BOT_TOKEN = "********"
+CHAT_ID = "*********"
 
-ESP32_STREAM_URL = "http://192.168.122.22"
+ESP32_STREAM_URL = "http://**********"
 
 def send_telegram(image_bytes):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto"
